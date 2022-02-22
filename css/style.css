@@ -1,0 +1,108 @@
+:root {
+    --bali-blue: #3B71FE;
+    --bali-black: #0D1F35;
+    --bali-slate: #565E73;
+    --bali-green: #B3E8BE;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins-Regular.woff") format("woff"),
+    url("../fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("../fonts/Gilroy-SemiBold.woff") format("woff"),
+    url("../fonts/Gilroy-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("../fonts/Gilroy-Bold.woff") format("woff"),
+    url("../fonts/Gilroy-Bold.ttf") format("truetype");
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    color: var(--bali-black);
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-family: Gilroy, sans-serif;
+}
+
+#header .navbar-brand a {
+}
+
+#header .navbar-brand a h1 {
+    color: var(--bali-black);
+    font-size: 32px;
+}
+
+#header .navbar-brand a h1::after {
+    content: ".";
+    color: var(--bali-blue);
+}
+
+#header .nav-link {
+    margin: 24px;
+    color: var(--bali-black);
+    font-family: Gilroy, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color .15s ease;
+}
+
+#header .nav-link:hover {
+    color: var(--bali-blue);
+}
+
+#header .btn {
+    margin: 16px;
+    padding: 12px 32px;
+    color: white;
+    background-color: var(--bali-blue);
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background-color .15s ease;
+}
+
+#header .btn:hover {
+    background-color: var(--bali-black);
+}
+
+#header .navbar-toggler {
+    border: none;
+    width: 32px;
+    height: 32px;
+    transform: translate(-50%);
+}
+
+#header .menu-icon, #header .menu-icon::before, #header .menu-icon::after {
+    display: block;
+    width: 28px;
+    height: 4px;
+    background-color: var(--bali-black);
+    border-radius: 2px;
+}
+
+#header .menu-icon::before {
+    content: "";
+    width: 32px;
+    transform: translate(-4px, -8px);
+}
+
+#header .menu-icon::after {
+    content: "";
+    width: 24px;
+    transform: translate(4px, 4px);
+}
+
+#header .navbar-toggler:focus {
+    box-shadow: none;
+}
