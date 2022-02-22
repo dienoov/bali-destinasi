@@ -36,9 +36,6 @@ h1, h2, h3, h4, h5, h6, strong {
     font-family: Gilroy, sans-serif;
 }
 
-#header .navbar-brand a {
-}
-
 #header .navbar-brand a h1 {
     color: var(--bali-black);
     font-size: 32px;
@@ -69,11 +66,6 @@ h1, h2, h3, h4, h5, h6, strong {
     background-color: var(--bali-blue);
     border-radius: 10px;
     font-size: 18px;
-    transition: background-color .15s ease;
-}
-
-#header .btn:hover {
-    background-color: var(--bali-black);
 }
 
 #header .navbar-toggler {
@@ -105,4 +97,89 @@ h1, h2, h3, h4, h5, h6, strong {
 
 #header .navbar-toggler:focus {
     box-shadow: none;
+}
+
+#hero {
+    height: 600px;
+}
+
+#hero .carousel-item {
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#hero img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(.8);
+}
+
+#hero .carousel-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#hero h2 {
+    text-align: center;
+    color: white;
+    font-size: 64px;
+}
+
+#hero p {
+    text-align: center;
+    color: white;
+}
+
+#hero form {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 720px;
+    max-width: 80%;
+    background-color: white;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+#hero form input {
+    border-radius: 10px;
+}
+
+#hero form button {
+    background-color: var(--bali-blue);
+    color: white;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+@media (max-width: 576px) {
+    #hero {
+        height: 500px;
+    }
+
+    #hero img {
+        height: 500px;
+    }
+
+    #hero h2 {
+        font-size: 48px;
+    }
+
+    #hero form {
+        padding: 40px;
+    }
+
+    #hero form button {
+        margin-top: 20px;
+        margin-left: 0;
+        width: 100%;
+    }
 }
