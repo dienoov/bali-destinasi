@@ -189,3 +189,32 @@ h1, h2, h3, h4, h5, h6, strong {
         padding-left: 16px;
     }
 }
+
+#destinations {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+#destinations img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+#destinations .star {
+    background-color: #f6f7f8;
+    padding: 6px 16px;
+    border-radius: 16px;
+}
+
+#destinations .star img {
+    height: 16px;
+    object-fit: initial;
+    color: orange;
+    margin-right: 4px;
+}
+
+#destinations .star span {
+    font-weight: 700;
+}
