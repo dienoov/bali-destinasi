@@ -262,3 +262,45 @@ h1, h2, h3, h4, h5, h6, strong {
 #tours .star span {
     font-weight: 700;
 }
+
+#reviews {
+    margin-top: 160px;
+    margin-bottom: 100px;
+}
+
+#reviews button {
+    background-color: var(--bali-blue);
+    color: white;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding: 16px 24px;
+    box-shadow: 0 16px 48px rgba(59, 113, 254, 0.175);
+}
+
+#reviews .card {
+    border-radius: 30px;
+    filter: drop-shadow(0 0 48px rgba(0, 0, 0, .05));
+}
+
+#reviews h3 {
+    font-size: 16px;
+    color: var(--bali-blue);
+}
+
+#reviews .card-img-bottom {
+    padding: 12px;
+    background-color: white;
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+#reviews .card-img-bottom img {
+    border-radius: 50%;
+    width: 72px;
+    object-fit: cover;
+}
