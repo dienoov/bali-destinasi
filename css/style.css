@@ -25,6 +25,8 @@
     font-family: Gilroy;
     src: url("../fonts/Gilroy-Bold.woff") format("woff"),
     url("../fonts/Gilroy-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-display: swap;
 }
 
 body {
@@ -34,6 +36,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, strong {
     font-family: Gilroy, sans-serif;
+    font-weight: bold !important;
 }
 
 #header .navbar-brand a h1 {
@@ -216,5 +219,46 @@ h1, h2, h3, h4, h5, h6, strong {
 }
 
 #destinations .star span {
+    font-weight: 700;
+}
+
+#tours {
+    margin-top: 160px;
+    margin-bottom: 100px;
+}
+
+#tours h2 {
+    font-weight: 600 !important;
+    font-size: 24px;
+    color: var(--bali-blue);
+}
+
+#tours .display-4 {
+    font-family: Gilroy, sans-serif;
+}
+
+#tours .card {
+    border-radius: 30px;
+}
+
+#tours .card-img {
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+#tours .star {
+    background-color: #f6f7f8;
+    padding: 6px 16px;
+    border-radius: 16px;
+}
+
+#tours .star img {
+    height: 16px;
+    object-fit: initial;
+    color: orange;
+    margin-right: 4px;
+}
+
+#tours .star span {
     font-weight: 700;
 }
