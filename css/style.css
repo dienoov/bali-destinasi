@@ -304,3 +304,50 @@ h1, h2, h3, h4, h5, h6, strong {
     width: 72px;
     object-fit: cover;
 }
+
+#subscribe {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    background-color: var(--bali-black);
+    color: white;
+    border-radius: 30px;
+    padding: 50px;
+}
+
+#subscribe form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#subscribe input {
+    border-radius: 10px;
+}
+
+#subscribe .button-group {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f6f7f8;
+}
+
+#subscribe .button-group span {
+    color: var(--bali-blue);
+    font-weight: 600;
+    font-family: Gilroy, sans-serif;
+}
+
+#subscribe button {
+    background-color: var(--bali-blue);
+    color: white;
+    display: block;
+    border-radius: 10px;
+    padding: 8px 24px;
+}
+
+@media (max-width: 576px) {
+    #subscribe {
+        border-radius: 0;
+    }
+}
